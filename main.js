@@ -1,4 +1,5 @@
 let btn = document.querySelector("#btn");
-const doTask  = () => alert("Ha presionado el botón y ejecutado la función.");
 
-btn.setAttribute("onclick", "doTask()");
+btn.addEventListener("click", ()=> alert("dio clic al botón"));
+btn.addEventListener("click", ()=> btn.classList.toggle("red"));
+btn.addEventListener("click", ()=> btn.classList.toggle("biggest"));
