@@ -1,7 +1,9 @@
 let btn = document.querySelector("#btn");
 
-btn.addEventListener("click", this.sendMenssage);
-
-function sendMenssage(){
-    alert("hiciste click en el botón");
+const eventManager = {
+    handleEvent: function (ev){
+        alert("Hiciste click");
+    }
 }
+
+btn.addEventListener("click", eventManager);
