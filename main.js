@@ -1,5 +1,7 @@
 let btn = document.querySelector("#btn");
 
-btn.addEventListener("click", ()=> alert("dio clic al botón"));
-btn.addEventListener("click", ()=> btn.classList.toggle("red"), "capture");
-btn.addEventListener("click", ()=> btn.classList.toggle("biggest"));
+btn.addEventListener("click", this.sendMenssage);
+
+function sendMenssage(){
+    alert("hiciste click en el botón");
+}
